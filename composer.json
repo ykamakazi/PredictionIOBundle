@@ -1,0 +1,19 @@
+{
+    "name":         "ykamakazi/predictionio-bundle",
+    "description":  "A Symfony2 Bundle for Prediction IO (http://www.prediction.io)",
+    "keywords":     ["amazon", "aws", "web services"],
+    "license":      "BSD",
+    "authors": [
+        {
+            "name":   "Ankur Paul",
+            "email":  "paul.ankur@gmail.com"
+        }
+    ],
+    "require": {
+        "predictionio/predictionio": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "Ykamakazi\\PredictionIOBundle": "" }
+    },
+    "target-dir": "Ykamakazi/PredictionIOBundle"
+}
