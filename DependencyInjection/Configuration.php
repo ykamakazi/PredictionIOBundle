@@ -18,6 +18,15 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
+        $rootNode = $treeBuilder->root('ykamakazi_prediction_io');
+
+        $rootNode
+            ->children()
+                ->scalarNode('app_key')->isRequired()->end()
+                ->scalarNode('api_url')->isRequired()->end()
+                ->scalarNode('api_port')->isRequired()->end()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

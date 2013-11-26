@@ -11,6 +11,8 @@
     <services>
         <service id="predictionio" class="%ykamakazi_prediction_io.class%">
             <argument>%ykamakazi_prediction_io.app_key%</argument>
+            <argument>%ykamakazi_prediction_io.api_url%</argument>
+            <argument>%ykamakazi_prediction_io.api_port%</argument>
         </service>
     </services>
 

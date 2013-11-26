@@ -7,10 +7,16 @@ use PredictionIO\PredictionIOClient;
 class PredictionIOWrapper extends PredictionIOClient
 {
 
-    public function __construct($key)
+    /**
+     * @param string $key
+     * @param string $url
+     * @param string $port
+     */
+    public function __construct($key, $url, $port)
     {
         $config = array(
-            'appkey' => $key
+            'appkey' => $key,
+            'apiurl' => $url.':'.$port
         );
         parent::factory($config);
     }
